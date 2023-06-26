@@ -83,7 +83,7 @@ body {
     font-weight: normal;
 }
 
-
+/* Max Media screen 900px */
 @media screen and (max-width: 900px) {
 
     /* Timer item value */
@@ -97,6 +97,7 @@ body {
     }
 }
 
+/* Max media screen 720px */
 @media screen and (max-width: 720px) {
 
     /* Section iPhone */
