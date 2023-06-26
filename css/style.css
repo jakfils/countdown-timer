@@ -1,0 +1,17 @@
+:root {
+    --page-background-color : #f1f5f8;
+    --section-title-color : #1a6aa2;
+    --section-sub-title-color: #0f273f;
+    --section-description-color: #869eb2;
+    --timer-color: #fdfdfd;
+    --timer-background-color: #102b42;
+
+}
+
+body {
+    background-color: var(--page-background-color);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: var(--section-title-color);
+}
