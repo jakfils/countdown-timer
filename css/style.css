@@ -81,6 +81,7 @@ body {
 .timer-item-type {
     font-size: 1.1vw;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 /* Max Media screen 900px */
@@ -94,7 +95,6 @@ body {
     /* Timer item type */
     .timer-item-type {
         font-size: 10px;
-        text-transform: uppercase;
     }
 }
 
@@ -111,6 +111,7 @@ body {
     .image {
         margin: 0 auto;
     }
+
     /* Timer */
     .timer {
         margin: 0 auto;
