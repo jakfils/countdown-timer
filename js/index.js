@@ -1,8 +1,10 @@
+// Get timer elements
 const timerDaysValue = document.getElementById("timer-days");
 const timerHoursValue = document.getElementById("timer-hours");
 const timerMinsValue = document.getElementById("timer-mins");
 const timerSecsValue = document.getElementById("timer-secs");
 
+// Funtion convert seconds to Date, Hour, Time, Mins and Secs
 function secondsToDhms(seconds) {
   seconds = Number(seconds);
   let d = Math.floor(seconds / (3600 * 24));
@@ -17,8 +19,10 @@ function secondsToDhms(seconds) {
   return [dDisplay, hDisplay, mDisplay, sDisplay];
 }
 
+// Initial number of seconds
 let seconds = 894999;
 
+// Update seconds and show timer
 setInterval(() => {
   value = secondsToDhms(seconds);
   timerDaysValue.textContent = value[0];
