@@ -1,11 +1,3 @@
-# Document
+# Countdown Timer
 
-Description
-
-## Desktop view
-
-![Desktop view](./img/desktop.jpg)
-
-## Mobile view
-
-![Mobile view](./img/mobile.jpg)
+Countdown clock which can be used when a new product is coming out or a sale is about to end on an ecommerce site
