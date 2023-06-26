@@ -1,10 +1,10 @@
 :root {
-    --page-background-color : #f1f5f8;
-    --section-title-color : #1a6aa2;
+    --page-background-color: #f1f5f8;
+    --section-title-color: #1a6aa2;
     --section-sub-title-color: #0f273f;
     --section-description-color: #869eb2;
-    --timer-color: #fdfdfd;
-    --timer-background-color: #102b42;
+    --time-color: #fdfdfd;
+    --time-background-color: #102b42;
 
 }
 
@@ -12,6 +12,101 @@ body {
     background-color: var(--page-background-color);
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-h1 {
+
+/* Secion iPhone */
+.iphone {
+    padding: 3.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3.5vw;
+}
+
+/* Title */
+.title {
     color: var(--section-title-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 900;
+    font-size: clamp(1.125rem, 1.5vw + 1rem, 2.25rem);
+}
+
+/* Sub-Title */
+.sub-title {
+    letter-spacing: 4px;
+    padding-bottom: 2vw;
+    color: var(--section-sub-title-color);
+}
+
+/* Description */
+.description {
+    color: var(--section-description-color);
+    padding-bottom: 2vw;
+}
+
+/* Timer */
+.timer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1vw;
+    max-width: 50%;
+
+}
+
+/* Timer item */
+.timer-item {
+    background-color: var(--time-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: clamp(0.313rem, 0.5vw + 0.25rem, 0.625rem);
+    ;
+    color: var(--time-color);
+
+}
+
+/* Timer item Span block */
+.timer-item span {
+    display: block;
+}
+
+/* Timer item value */
+.timer-item-value {
+    font-size: 2.3vw;
+    font-weight: 500;
+}
+
+/* Timer item type */
+.timer-item-type {
+    font-size: 1.1vw;
+    font-weight: normal;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    /* Timer item value */
+    .timer-item-value {
+        font-size: 20px;
+    }
+
+    /* Timer item type */
+    .timer-item-type {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    /* Section iPhone */
+    .iphone {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3.5vw;
+    }
+
+    /* Image */
+    .image {
+        margin: 0 auto;
+    }
 }
