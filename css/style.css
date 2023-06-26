@@ -94,6 +94,7 @@ body {
     /* Timer item type */
     .timer-item-type {
         font-size: 10px;
+        text-transform: uppercase;
     }
 }
 
